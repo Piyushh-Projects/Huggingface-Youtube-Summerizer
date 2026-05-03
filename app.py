@@ -33,7 +33,6 @@ Content: {text}
 """
 prompt = PromptTemplate(template=prompt_template, input_variables=["text"])
 
-
 def clean_youtube_url(url):
     if "youtu.be" in url:
         video_id = url.split("/")[-1]
